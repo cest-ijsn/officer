@@ -102,7 +102,7 @@ print.rdocx <- function(x, target = NULL, ...){
     return(invisible())
   }
 
-  if( !grepl(x = target, pattern = "\\.(docx)$", ignore.case = TRUE) )
+  if( !grepl(x = target, pattern = "\\.(docx|docm)$", ignore.case = TRUE) )
     stop(target , " should have '.docx' extension.")
 
   int_id <- 1 # unique id identifier
